@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ReactController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper text-center">
+
+    This friendly message is coming from:
+    <div {{ react_component('MyComponent', { 'fullName': ' khaled Bribri' }) }}></div>
+      <div {{ react_component('Switch') }}></div>
+    <div {{ react_component('Modal') }}></div>
+</div>
+
+{% endblock %}
